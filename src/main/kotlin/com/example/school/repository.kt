@@ -10,7 +10,6 @@ import org.springframework.stereotype.Repository
 
 @Repository
 interface DataRepository : JpaRepository<Teacher_data, Int> {
-
     fun findByName(name: String): List<Teacher_data>
     fun findByLessonAndAge(lesson : Data_Lesson, age : Int): Teacher_data?
 }
